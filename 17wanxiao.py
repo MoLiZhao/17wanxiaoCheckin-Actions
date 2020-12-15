@@ -380,7 +380,7 @@ def run():
                     name = check['post_dict']['name']
                 log_info.append(f"""#### {name}{check['type']}打卡信息：
 ```
-{json.dumps(check['check_json'], sort_keys=True, indent=4, ensure_ascii=False)}
+{json.dumps(check['post_dict'], sort_keys=True, indent=4, ensure_ascii=False)}
 ```
 
 ------
