@@ -370,9 +370,9 @@ def run():
             return
         else:
             for check in check_dict:
-                if check['check_json'].get('checkbox'):
+                if check['post_dict'].get('checkbox'):
                     post_msg = "\n".join(
-                        [f"| {i['description']} | {i['value']} |" for i in check['check_json'].get('checkbox')])
+                        [f"| {i['description']} | {i['value']} |" for i in check['post_dict'].get('checkbox')])
                 else:
                     post_msg = "暂无详情"
                 name = check['post_dict'].get('username')
