@@ -390,7 +390,7 @@ def run():
 ------
 ```
 {check['res']}
-```
+```""")
     server_push(sckey, "\n".join(log_info))
 
 
