@@ -225,6 +225,10 @@ def check_in(username, password):
                 j['value'] = '36.4'  # 由于原先为null，这里直接设置36.2（根据自己学校打卡选项来）
             if j['propertyname'] == 'isTransitArea':
                 j['value'] = '否'
+            if j['propertyname'] == 'ownPhone':
+                j['value'] = '17114435565'
+            if j['propertyname'] == 'mergencyPeoplePhone':
+                j['value'] = '13964414537'
 
         # 修改地址，依照自己完美校园，查一下地址即可
         # post_dict['areaStr'] = '{"streetNumber":"89号","street":"建设东路","district":"","city":"新乡市","province":"河南省",' \
