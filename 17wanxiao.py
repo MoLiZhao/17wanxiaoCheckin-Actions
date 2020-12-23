@@ -230,7 +230,7 @@ def check_in(username, password):
             if j['propertyname'] == 'mergencyPeoplePhone':
                 j['value'] = '13964414537'
             if j['propertyname'] == 'ncxsj':
-                j['value'] = '2020-12-26'
+                j['value'] = '2020-12-27'
 
 
         # 修改地址，依照自己完美校园，查一下地址即可
