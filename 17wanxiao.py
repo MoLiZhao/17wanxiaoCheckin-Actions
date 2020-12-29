@@ -221,16 +221,16 @@ def check_in(username, password):
 
         # 修改温度等参数
         for j in post_dict['updatainfo']:  # 这里获取打卡json字段的打卡信息，微信推送的json字段
-            if j['propertyname'] == 'temperature':  # 找到propertyname为temperature的字段
-                j['value'] = '36.4'  # 由于原先为null，这里直接设置36.2（根据自己学校打卡选项来）
-            if j['propertyname'] == 'isTransitArea':
-                j['value'] = '否'
-            if j['propertyname'] == 'ownPhone':
-                j['value'] = '17114435565'
-            if j['propertyname'] == 'mergencyPeoplePhone':
-                j['value'] = '13964414537'
-            if j['propertyname'] == 'ncxsj':
-                j['value'] = '2020-12-27'
+            #if j['propertyname'] == 'temperature':  # 找到propertyname为temperature的字段
+                #j['value'] = '36.4'  # 由于原先为null，这里直接设置36.2（根据自己学校打卡选项来）
+            #if j['propertyname'] == 'isTransitArea':
+                #j['value'] = '否'
+            #if j['propertyname'] == 'ownPhone':
+                #j['value'] = '17114435565'
+            #if j['propertyname'] == 'mergencyPeoplePhone':
+                #j['value'] = '13964414537'
+            #if j['propertyname'] == 'ncxsj':
+                #j['value'] = '2020-12-27'
 
 
         # 修改地址，依照自己完美校园，查一下地址即可
